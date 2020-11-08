@@ -1,11 +1,9 @@
 /*HTML Tags*/
+
 body{
     background-color: hsl(210, 46%, 95%);
     font-family: 'Manrope', sans-serif;
-    margin: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0px;   
 }
 
 h1{
@@ -40,6 +38,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .main-div{
@@ -234,6 +233,10 @@ p{
     .share-container{
         width: 65%;
         height: 65%;
+    }
+
+    .share-popup{
+        display: none;
     }
 }
 

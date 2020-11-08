@@ -1,0 +1,268 @@
+/*HTML Tags*/
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Manrope', sans-serif;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    font-size: 22px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h3{
+   letter-spacing: 6px;
+   color: hsl(212, 23%, 69%);
+   font-weight: 500;
+}
+
+h5{
+    margin: 0px;
+    color: hsl(217, 19%, 35%);
+}
+
+p{
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(214, 17%, 51%);
+}
+
+/*Classes*/
+
+.wrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-div{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 20px 30px 50px hsl(212, 23%, 85%);
+    border-radius: 10px;
+    
+}
+
+.IMG-DIV{
+    width: 300px;
+    height: 295px;
+    background: url("images/drawers.jpg");
+}
+
+.INFO-DIV{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+}
+
+.drawers-img{
+    width: 123%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.text-div{
+    width: 85%;
+}
+
+.desktop-text, .mobile-text{
+    line-height: 23px;
+}
+
+.mobile-h1, .mobile-text{
+    display: none;
+}
+
+.text-div-footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.sixty-perc-div{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 15px;
+}
+
+.twenty-perc-div{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.footer-date{
+    margin: 0px;
+    font-size: 13px;
+}
+
+.share-container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: hsl(210, 46%, 95%);
+    transition: 0.3s;
+}
+
+.share-popup{
+    position: absolute;
+    left: 297px;
+    top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 230px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px hsl(212, 23%, 85%);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.social-holder-div{
+    display: flex;
+}
+
+.outer-share-div{
+    position: relative;
+}
+
+.diamond{
+    height: 30px;
+    width: 30px;
+    transform: rotate(45deg);
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+    top: 47px;
+}
+
+/*Hover classes*/
+
+.share-container:hover{
+    cursor: pointer;
+}
+
+/*Event Listener Classes*/
+
+.share-popup-clicked{
+    opacity: 1;
+}
+
+.share-container-clicked{
+    background-color: hsl(214, 17%, 51%);
+}
+
+.button-fill-clicked{
+    fill: white;
+    transition: 0.3s;
+}
+
+/*Media Queries*/
+@media (max-width: 975px) {
+
+    h1{
+        padding-top: 30px;
+        font-size: 19px;
+    }
+
+    .main-div{
+        flex-direction: column;
+    }
+
+    .INFO-DIV{
+        width: 369px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .IMG-DIV{
+        height:245px;
+    }
+
+    .drawers-img{
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    .text-div-footer{
+        margin-bottom: 20px;
+    }
+
+    .mobile-h1, .mobile-text{
+        display: block;
+    }
+
+    .mobile-text{
+        font-size: 15px;
+    }
+
+    .desktop-h1, .desktop-text{
+        display: none;
+    }
+
+    .twenty-perc-div{
+        width: 18%;
+    }
+
+    .share-container{
+        width: 65%;
+        height: 65%;
+    }
+}
+
+/*.drawers-img{
+    width: 123%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.IMG-DIV{
+    width: 300px;
+    height: 295px;
+    background: url("images/drawers.jpg");
+}
+
+.twenty-perc-div{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share-container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: hsl(210, 46%, 95%);
+    transition: 0.3s;
+}*/
